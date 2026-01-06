@@ -131,7 +131,7 @@ const Contact = () => {
           >
             <form
               onSubmit={handleSubmit}
-              className="bg-card rounded-2xl p-8 shadow-medium"
+              className="bg-card rounded-2xl p-6 sm:p-8 shadow-medium"
             >
               <div className="space-y-6">
                 <div>

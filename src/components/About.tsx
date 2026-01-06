@@ -30,7 +30,7 @@ const About = () => {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <div className="bg-blue-light rounded-2xl p-8">
+            <div className="bg-blue-light rounded-2xl p-6 sm:p-8">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-16 h-16 bg-primary rounded-xl flex items-center justify-center">
                   <GraduationCap className="w-8 h-8 text-primary-foreground" />
@@ -81,7 +81,7 @@ const About = () => {
               technologies to stay ahead in this ever-evolving field.
             </p>
 
-            <div className="grid grid-cols-3 gap-4 pt-4">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
               <div className="text-center p-4 bg-background rounded-xl">
                 <div className="font-display text-3xl font-bold text-primary">
                   1.5+

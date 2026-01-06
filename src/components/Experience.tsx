@@ -1,9 +1,20 @@
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Briefcase, Calendar, MapPin, ExternalLink } from "lucide-react";
+import { Briefcase, Calendar, MapPin } from "lucide-react";
 
-const experiences = [
+type ExperienceItem = {
+  company: string;
+  role: string;
+  type: string;
+  duration: string;
+  period: string;
+  location: string;
+  description: string;
+  color: string;
+  skills?: string[];
+};
+
+const experiences: ExperienceItem[] = [
   {
     company: "ANA Technology Solutions India Private Limited",
     role: "Software Engineer Internship",
@@ -15,24 +26,13 @@ const experiences = [
       "Working on software development projects and gaining hands-on experience in building scalable solutions.",
     color: "from-primary to-blue-dark",
   },
-  {
-    company: "ANA Technology Solutions India Private Limited",
-    role: "Software Engineer",
-    type: "On-site",
-    duration: "Sep 2024 - Mar 2025",
-    period: "7 mos",
-    location: "Kovilambakkam",
-    skills: ["Linux", "Microsoft Visual Studio Code"],
-    description:
-      "Developed software solutions using various technologies and tools.",
-    color: "from-blue-dark to-blue-navy",
-  },
+ 
   {
     company: "Vulture Lines Tech Management Private Limited",
     role: "Web Development Intern",
     type: "Hybrid",
     duration: "Mar 2025 - Apr 2025",
-    period: "2 mos",
+    period: "1 mos",
     location: "Chennai, Tamil Nadu, India",
     description:
       "Started a new position as Web Development intern, working on frontend and backend web technologies.",
@@ -41,7 +41,7 @@ const experiences = [
 ];
 
 const Experience = () => {
-  const ref = useRef(null);
+  const ref = useRef<HTMLElement | null>(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
@@ -78,7 +78,7 @@ const Experience = () => {
                   {/* Timeline dot */}
                   <div className="absolute left-6 top-8 w-5 h-5 rounded-full bg-primary shadow-glow hidden md:block" />
 
-                  <div className="md:ml-20 bg-card rounded-2xl p-6 shadow-medium hover:shadow-large transition-shadow duration-300">
+                  <div className="md:ml-20 bg-card rounded-2xl p-5 sm:p-6 shadow-medium hover:shadow-large transition-shadow duration-300">
                     <div className="flex flex-wrap items-start justify-between gap-4 mb-4">
                       <div>
                         <div
