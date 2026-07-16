@@ -19,8 +19,8 @@ const experiences: ExperienceItem[] = [
     company: "ANA Technology Solutions India Private Limited",
     role: "Software Engineer Internship",
     type: "On-site",
-    duration: "Sep 2024 - Present",
-    period: "1 yr 5 mos",
+    duration: "Sep 2024 - July 2026",
+    period: "1 yr 10 mos",
     location: "Tamil Nadu, India",
     description:
       "Working on software development projects and gaining hands-on experience in building scalable solutions.",
