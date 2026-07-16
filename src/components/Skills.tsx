@@ -8,6 +8,7 @@ import {
   Globe,
   Terminal,
   Settings,
+  Languages,
 } from "lucide-react";
 
 const skillCategories = [
@@ -47,6 +48,12 @@ const skillCategories = [
     icon: Terminal,
     skills: ["Linux", "Git", "VS Code", "Docker", "AWS"],
     color: "from-blue-navy to-primary",
+  },
+  {
+    title: "Languages",
+    icon: Languages,
+    skills: ["Japanese N5"],
+    color: "from-accent to-blue-dark",
   },
   {
     title: "Others",
