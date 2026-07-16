@@ -24,9 +24,11 @@ const skillCategories = [
     color: "from-blue-dark to-blue-navy",
   },
   {
-    title: "Cybersecurity",
+    title: "Cybersecurity & Blockchain",
     icon: Shield,
     skills: [
+      "Blockchain Development",
+      "Smart Contracts",
       "Network Security",
       "Penetration Testing",
       "Vulnerability Assessment",

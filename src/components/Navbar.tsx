@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import logo from "@/assets/logo.png";
 import { Menu } from "lucide-react";
 import {
   Sheet,
@@ -43,8 +42,8 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 flex items-center justify-between">
-        <a href="#home" className="flex items-center gap-3">
-          <img src={logo} alt="Logo" className="h-10 w-auto" />
+        <a href="#home" className="font-display text-xl font-bold text-foreground hover:text-primary transition-colors">
+          S. Bharath Ram
         </a>
 
         <ul className="hidden md:flex items-center gap-8">

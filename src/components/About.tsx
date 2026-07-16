@@ -55,7 +55,7 @@ const About = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <Calendar className="w-4 h-4 text-primary" />
-                  <span>3rd Year Student</span>
+                  <span>Final Year Student</span>
                 </div>
               </div>
             </div>
@@ -68,10 +68,10 @@ const About = () => {
             className="space-y-6"
           >
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm a passionate Computer Science student with a focus on
-              Cybersecurity. With hands-on experience in software development
-              and web technologies, I strive to build secure, efficient, and
-              user-friendly applications.
+              I'm a passionate Final Year Computer Science student with a keen
+              interest in Blockchain Development and Cybersecurity. With more than
+              one year of internship experience, I strive to build secure,
+              efficient, and user-friendly applications.
             </p>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
