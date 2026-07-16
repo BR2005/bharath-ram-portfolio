@@ -1,14 +1,9 @@
-import logo from "@/assets/logo.png";
-
 const Footer = () => {
   return (
     <footer className="py-8 bg-card border-t border-border">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-3">
-            <img src={logo} alt="Logo" className="h-8 w-auto" />
-            <span className="font-display font-semibold">S. Bharath Ram</span>
-          </div>
+          <span className="font-display font-semibold text-lg">S. Bharath Ram</span>
 
           <p className="text-sm text-muted-foreground text-center">
             © {new Date().getFullYear()} S. Bharath Ram. All rights reserved.
