@@ -43,7 +43,7 @@ const Hero = () => {
             >
               <Shield className="w-4 h-4 text-primary" />
               <span className="text-primary font-medium text-sm">
-                Cybersecurity Enthusiast
+                Blockchain & Cybersecurity Enthusiast
               </span>
             </motion.div>
 
@@ -64,9 +64,9 @@ const Hero = () => {
               transition={{ delay: 0.4 }}
               className="text-lg text-muted-foreground max-w-lg mb-8"
             >
-              A 3rd-Year CSE (Cybersecurity) Student at Dhanalakshmi College of
-              Engineering, passionate about building secure and innovative
-              solutions.
+              A Final Year CSE Student at Dhanalakshmi College of Engineering,
+              enthusiastic about Blockchain Development and Cybersecurity. I have
+              more than one year of hands-on experience as an intern.
             </motion.p>
 
             <motion.div
