@@ -27,14 +27,14 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "bharathram@example.com",
-      href: "mailto:bharathram@example.com",
+      value: "77bharathcyber@gmail.com",
+      href: "mailto:77bharathcyber@gmail.com",
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+91 XXXXX XXXXX",
-      href: "tel:+91XXXXXXXXXX",
+      value: "8610088995 / 7530068995",
+      href: "tel:8610088995",
     },
     {
       icon: MapPin,
@@ -44,8 +44,12 @@ const Contact = () => {
   ];
 
   const socialLinks = [
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Github, href: "#", label: "GitHub" },
+    {
+      icon: Linkedin,
+      href: "https://www.linkedin.com/in/s-bharath-ram-561827280/",
+      label: "LinkedIn",
+    },
+    { icon: Github, href: "https://github.com/BR2005", label: "GitHub" },
   ];
 
   return (
@@ -87,9 +91,9 @@ const Contact = () => {
               {contactInfo.map((item) => (
                 <div
                   key={item.label}
-                  className="flex items-center gap-4 p-4 bg-card rounded-xl"
+                  className="flex items-start gap-4 p-4 bg-card rounded-xl sm:items-center"
                 >
-                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
+                  <div className="mt-0.5 flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-primary sm:mt-0">
                     <item.icon className="w-5 h-5 text-primary-foreground" />
                   </div>
                   <div>
@@ -97,12 +101,22 @@ const Contact = () => {
                     {item.href ? (
                       <a
                         href={item.href}
-                        className="font-medium hover:text-primary transition-colors"
+                        className="font-medium leading-relaxed hover:text-primary transition-colors break-words"
                       >
-                        {item.value}
+                        {item.label === "Phone" ? (
+                          <span className="block">
+                            {item.value.split(" / ").map((phone) => (
+                              <span key={phone} className="block">
+                                {phone}
+                              </span>
+                            ))}
+                          </span>
+                        ) : (
+                          item.value
+                        )}
                       </a>
                     ) : (
-                      <p className="font-medium">{item.value}</p>
+                      <p className="font-medium leading-relaxed">{item.value}</p>
                     )}
                   </div>
                 </div>
@@ -121,88 +135,6 @@ const Contact = () => {
                 </a>
               ))}
             </div>
-          </motion.div>
-
-          {/* Contact form */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.4 }}
-          >
-            <form
-              onSubmit={handleSubmit}
-              className="bg-card rounded-2xl p-6 sm:p-8 shadow-medium"
-            >
-              <div className="space-y-6">
-                <div>
-                  <label
-                    htmlFor="name"
-                    className="block text-sm font-medium mb-2"
-                  >
-                    Your Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    value={formData.name}
-                    onChange={(e) =>
-                      setFormData({ ...formData, name: e.target.value })
-                    }
-                    required
-                    className="w-full px-4 py-3 bg-background rounded-lg border border-border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
-                    placeholder="John Doe"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-sm font-medium mb-2"
-                  >
-                    Email Address
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    value={formData.email}
-                    onChange={(e) =>
-                      setFormData({ ...formData, email: e.target.value })
-                    }
-                    required
-                    className="w-full px-4 py-3 bg-background rounded-lg border border-border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
-                    placeholder="john@example.com"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="message"
-                    className="block text-sm font-medium mb-2"
-                  >
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    rows={5}
-                    value={formData.message}
-                    onChange={(e) =>
-                      setFormData({ ...formData, message: e.target.value })
-                    }
-                    required
-                    className="w-full px-4 py-3 bg-background rounded-lg border border-border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all resize-none"
-                    placeholder="Your message here..."
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full flex items-center justify-center gap-2 px-6 py-3.5 bg-primary text-primary-foreground rounded-lg font-semibold hover:shadow-glow transition-all duration-300 hover:scale-[1.02]"
-                >
-                  <Send className="w-5 h-5" />
-                  Send Message
-                </button>
-              </div>
-            </form>
           </motion.div>
         </div>
       </div>
