@@ -55,7 +55,7 @@ const Hero = () => {
             >
               Hello, I'm
               <br />
-              <span className="text-gradient">S. Bharath Ram</span>
+              <span className="text-gradient">Bharath Ram</span>
             </motion.h1>
 
             <motion.p
@@ -67,6 +67,15 @@ const Hero = () => {
               A Final Year B.E.CSE(Cybersecurity) Student at Dhanalakshmi College of Engineering,
               enthusiastic about Blockchain Development and Cybersecurity. I have
               more than one year of hands-on experience as an intern.
+            </motion.p>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.45 }}
+              className="text-sm text-muted-foreground max-w-lg mb-8"
+            >
+              Also known online as BharathRam, I focus on building secure and practical digital products.
             </motion.p>
 
             <motion.div

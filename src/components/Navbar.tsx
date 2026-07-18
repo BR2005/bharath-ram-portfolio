@@ -43,7 +43,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 sm:px-6 flex items-center justify-between">
         <a href="#home" className="font-display text-xl font-bold text-foreground hover:text-primary transition-colors">
-          S. Bharath Ram
+          Bharath Ram
         </a>
 
         <ul className="hidden md:flex items-center gap-8">
