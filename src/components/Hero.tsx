@@ -64,7 +64,7 @@ const Hero = () => {
               transition={{ delay: 0.4 }}
               className="text-lg text-muted-foreground max-w-lg mb-8"
             >
-              A Final Year CSE Student at Dhanalakshmi College of Engineering,
+              A Final Year B.E.CSE(Cybersecurity) Student at Dhanalakshmi College of Engineering,
               enthusiastic about Blockchain Development and Cybersecurity. I have
               more than one year of hands-on experience as an intern.
             </motion.p>
