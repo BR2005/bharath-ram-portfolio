@@ -50,9 +50,9 @@ const skillCategories = [
     color: "from-blue-navy to-primary",
   },
   {
-    title: "Languages",
+    title: " Languages",
     icon: Languages,
-    skills: ["Japanese N5"],
+    skills: ["sowrashtra(MotherTounge),Tamil,Japanese N5,English"],
     color: "from-accent to-blue-dark",
   },
   {
