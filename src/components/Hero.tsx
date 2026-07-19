@@ -78,6 +78,15 @@ const Hero = () => {
               Also known online as BharathRam, I focus on building secure and practical digital products.
             </motion.p>
 
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5 }}
+              className="text-sm font-medium text-foreground max-w-lg mb-8"
+            >
+              Languages: Sowrastra, English, Tamil, Japanese
+            </motion.p>
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
