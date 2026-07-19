@@ -52,7 +52,7 @@ const skillCategories = [
   {
     title: " Languages",
     icon: Languages,
-    skills: ["sowrashtra(MotherTounge),Tamil,Japanese N5,English"],
+    skills: ["sowrashtra(MotherTounge)", "Tamil", "Japanese N5", "English"],
     color: "from-accent to-blue-dark",
   },
   {
